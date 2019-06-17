@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Content Production</title>
+
+    <style>
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: freight-sans-pro, sans-serif;
+        }
+
+        button {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        button.learn-more {
+            width: 12rem;
+            height: auto;
+        }
+
+        button.learn-more .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: #F0519B;
+            border-radius: 1.625rem;
+        }
+
+        button.learn-more .circle .icon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #fff;
+        }
+
+        button.learn-more .circle .icon.arrow {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+        }
+
+        button.learn-more .circle .icon.arrow::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+        }
+
+        button.learn-more .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: #F0519B;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        button:hover .circle {
+            width: 100%;
+        }
+
+        button:hover .circle .icon.arrow {
+            background: #fff;
+            transform: translate(1rem, 0);
+        }
+
+        button:hover .button-text {
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+
+<body class="body-white">
+
+    <header class="sticky">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img class="my-logo" src="Images/c-logo.svg" alt=logo></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="current" href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-divider">
+            <div>
+                <h2>
+                    A BICYCLE GUIDE FOR NON-DANES
+                </h2>
+
+                <h4>
+                    Copenhagen is the City of Bicycles; the environmental benefits are clear, and it is a quick and cost-efficient way of getting around the city.
+                    <br> <br>The Municipality of Copenhagen wanted to focus on bicycling as the preferred choice of transportation in the city. But as a newcomer, it can be dangerous to navigate the city by bike without knowing the rules. The Municipality needed a digital platform to communicate its Bicycle Guide for Non-Danes.
+                </h4>
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-area-1">
+
+                <img src="Images/bike-brochure.jpg" style="width: 100%" alt="image">
+
+
+            </div>
+            <div class="grid-area-2">
+
+                <h4>
+                    I was part of a project to convert a printed brochure into a website with an instructional video explaining the bicycle rules to foreigners. <br> <br>
+                    My role in the team was writing the treatment and creating the storyboard, location scouting, directing and video-editing using Adobe Premiere Pro.
+                    <br> <br>
+                    This is the original printed brochure which explained the 10 general bicycle guidelines.
+                </h4>
+            </div>
+
+            <div class="grid-area-3">
+
+                <h4>
+                    To ensure coherent visual communication with the Municipality of Copenhagen, it was important that we follow their Design Guide in terms of typography, logo, icons, color scheme and overall look and feel. We also had to add their outro to our video-edit.
+                    <br> <br>
+                    Based on their guide, we developed this Style Tile for the website and video graphics.
+
+
+                </h4>
+
+            </div>
+            <div class="grid-area-4">
+
+                <img src="Images/styletile-cphbike.jpg" style="width: 100%" alt="image">
+
+
+
+            </div>
+            <div class="grid-area-5">
+
+                <img src="Images/storyboard.png" style="width: 100%" alt="image">
+            </div>
+            <div class="grid-area-6">
+
+                <h4>The next step of our process was to define and research our target group. We defined our target group as:
+                    <br> <br>
+                    <em>International students new to Copenhagen <br> Aged 17-25<br>
+                        Characteristics: Digitally savvy with a short attention span</em>
+                    <br> <br>
+                    Next we wrote a treatment and developed a storyboard around our main character; <br><br>
+                    <em>A young female student who embarks on her first bike ride from her home to university. At first, she is insecure and nervous, but slowly gains confidence as she receives cues and pointers about the bicycle rules.</em>
+                    <br> <br>
+                    Based on our target group, we didn’t want to make a video which was too long and felt “instructional” and boring, but rather a short video which would also be suited for social media posts. We therefore decided to narrow our focus to 3 of the 10 bicycle guidelines.
+
+
+                </h4>
+
+            </div>
+
+            <div class="grid-area-7">
+
+                <h4>
+
+                    To make the story more dramatic and visually interesting, we made sure to incorporate the classic dramaturgical elements in our storyline. <br> <br> We used various types of framing (long and medium shots, close-ups, and over-the-shoulder). <br>
+                    We also used different types of angles and view-points (high vs. low angle, low and neutral view-point) and various camera movements such a dollying and panning.
+                    <br> <br>
+                    We especially used close-ups to emphasize the emotions and evolution of our character.
+
+
+                </h4>
+
+            </div>
+
+
+            <div class="grid-area-8">
+
+                <img src="Images/close-ups.jpg" style="width: 70%" alt="image">
+
+            </div>
+
+            <div class="grid-area-9">
+                <h4> The video was edited in Adobe Premiere Pro. We used various graphical elements to provide pointers to our character throughout her journey. We also used cross-cut editing technique for a more dramatic effect, added color corrections, and finally applied a creative filter. <br> <br>
+
+                    Lastly, we added the audio which is mix of up-beat music and sound effects. We chose not to include any narration, as videos are often being viewed on devices with the audio off, so the message of the video needed to be clearly communicated without the use of sound.
+                    <br> <br>
+                    The file was saved in the H.264 codec in mp4-file format.
+
+                    This is the final cut: </h4>
+                <video style="width:95%" controls poster="Images/poster.jpg">
+
+                    <source src="Images/bike-cph-video.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+            <div class="grid-area-10">
+                <div>
+                    <h4> Last step was to embed the video in our website. The video was embedded in HTML 5. The final project can be seen here.
+                    </h4>
+                </div>
+
+
+                <a href="http://tiffvoli.com/you-bike-cph/" target="_blank">
+                    <button class="learn-more">
+                        <div class="circle">
+                            <span class="icon arrow"></span>
+                        </div>
+                        <p class="button-text">Website</p>
+                    </button>
+                </a>
+
+            </div>
+
+            <div class="grid-area-11">
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

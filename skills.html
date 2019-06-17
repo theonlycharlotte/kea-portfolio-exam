@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Skills</title>
+
+
+    <style>
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #cv-button-wrap {
+            margin-top: 52em;
+            margin: 0 auto;
+            width: 20em;
+            height: 20em;
+
+
+        }
+
+
+        button {
+            margin-bottom: 1em;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+
+        }
+
+        button.learn-more {
+            width: 12rem;
+            height: auto;
+        }
+
+        button.learn-more .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: #F0519B;
+            border-radius: 1.625rem;
+        }
+
+        button.learn-more .circle .icon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #fff;
+        }
+
+        button.learn-more .circle .icon.arrow {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+        }
+
+        button.learn-more .circle .icon.arrow::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+        }
+
+        button.learn-more .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: #F0519B;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        button:hover .circle {
+            width: 100%;
+        }
+
+        button:hover .circle .icon.arrow {
+            background: #fff;
+            transform: translate(1rem, 0);
+        }
+
+        button:hover .button-text {
+            color: #fff;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body class="body-gradient">
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img class="my-logo" src="Images/c-logo.svg" alt=logo></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a class="current" href="skills.html">SKILLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div class="wrap">
+
+            <div class="section-title wow fadeInUp">
+                <h1>My skills</h1>
+                <!--            <span class="border"></span>-->
+            </div>
+
+            <article class="row">
+                <ul>
+                    <li class="html">
+                        <h6>PROTOTYPING(XD)</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="css">
+                        <h6>HTML</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="php">
+                        <h6>CSS</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="mysql">
+                        <h6>JAVASCRIPT</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="row">
+                <ul>
+                    <li class="jquery">
+                        <h6>ILLUSTRATOR</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="javascript">
+                        <h6>PREMIERE PRO</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="seo">
+                        <h6>PHOTOSHOP</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="unix">
+                        <h6>INDESIGN</h6>
+                        <div>
+                            <span class="animated fadeInLeft"></span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+
+
+
+<div id="cv-button-wrap">
+            <a href="Images/CV.pdf" download>
+                <button class="learn-more">
+                    <div class="circle">
+                        <span class="icon arrow"></span>
+                    </div>
+                    <p class="button-text">Download CV</p>
+                </button>
+            </a>
+</div>
+
+
+    </main>
+
+<!--
+    <footer>
+
+        <div>
+            <a href="https://www.linkedin.com/in/charlotte-jarlholm-07bb0b31/">
+                <img class="some-icons" src="Images/linkedin.svg" alt="linkedIn">
+            </a>
+            <a href="https://github.com/theonlycharlotte">
+                <img class="some-icons" src="Images/github.svg" alt="Github"></a>
+            <a href="https://www.instagram.com/charlottejarlholm/?hl=en">
+                <img class="some-icons" src="Images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/jarlholm">
+                <img class="some-icons" src="Images/facebook.svg" alt="Facebook"></a>
+        </div>
+
+    </footer>
+-->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

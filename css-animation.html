@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>CSS animation</title>
+
+    <style>
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: freight-sans-pro, sans-serif;
+        }
+
+        button {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        button.learn-more {
+            width: 12rem;
+            height: auto;
+        }
+
+        button.learn-more .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: #F0519B;
+            border-radius: 1.625rem;
+        }
+
+        button.learn-more .circle .icon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #fff;
+        }
+
+        button.learn-more .circle .icon.arrow {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+        }
+
+        button.learn-more .circle .icon.arrow::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+        }
+
+        button.learn-more .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: #F0519B;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        button:hover .circle {
+            width: 100%;
+        }
+
+        button:hover .circle .icon.arrow {
+            background: #fff;
+            transform: translate(1rem, 0);
+        }
+
+        button:hover .button-text {
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+
+<body class="body-white">
+
+    <header class="sticky">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img class="my-logo" src="Images/c-logo.svg" alt=logo></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="current" href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-divider">
+            <div>
+                <h2>
+                    BRINGING A CHARACTER TO LIFE
+                </h2>
+
+                <h4>
+                    This was one of my first projects as a Multimedia Design student. Using Adobe Illustrator and CSS animations, the task was to design your own character, build a storyline around it and breathe life into the character by drawing a sprite sheet and animating one scene from the story.</h4>
+                <br> <br>
+                <em>It was a fun exercise which opened my eyes to the many possibilities and applications of CSS animations in web design.</em>
+
+            </div>
+        </div>
+
+
+            <div class="grid">
+                <div class="grid-area-1">
+
+                    <img src="Images/character-design.svg" alt="image">
+
+                </div>
+                <div class="grid-area-2">
+
+                    <h4>
+                        I didn’t have an exact vision as to what I wanted the character to look like, except I was going for flat design. I was experimenting with basic shapes and the pen tool in Illustrator, and just from playing around with the shapes and combining them, this cute, little Grim Reaper began to take form.
+                    </h4>
+                </div>
+
+                <div class="grid-area-3">
+
+                    <h4>
+                        My inspiration for the universe was the game ‘Year Walk’. For those not familiar with it, Year Walk is a Swedish adventure game developed for iOS devices in 2013. The game is loosely based on an ancient Swedish tradition called "Årsgång". It has en eerie feel to it which I thought could go well with the little Grim Reaper. This is the style tile which I designed to provide the style and atmosphere for the scene.
+
+                    </h4>
+
+                </div>
+                <div class="grid-area-4">
+
+                    <img src="Images/style-tile-animation.png" style="width: 100%" alt="image">
+
+
+
+                </div>
+                <div class="grid-area-5">
+
+                    <img src="Images/background-gr.jpg" style="width: 100%" alt="image">
+
+                </div>
+                <div class="grid-area-6">
+
+                    <h4>The background I designed in Adobe Illustrator as well. I designed the shapes myself and applied glow and texture filters.
+                    </h4>
+
+                </div>
+
+                <div class="grid-area-7">
+
+                    <h4>
+                        In order to create the animation, I had to draw the character in several poses in order to design the sprite sheet. It was challenging, but fun, to draw the different facial expressions and see the character come to life.
+                        Using HTML and CSS, I used CSS keyframes to run an animation of the sprite sheet.
+                    </h4>
+
+                </div>
+
+
+                <div class="grid-area-8">
+
+                    <img src="Images/facial-exp.svg" style="width: 90%" alt="image">
+
+                </div>
+
+                <div class="grid-area-9">
+
+                    <img src="Images/sprite.svg" style="width: 100%" alt="image">
+
+                </div>
+
+                <div class="grid-area-10">
+
+                    <a href="http://charlottejarlholm.com/kea/lenny-the-reaper/grimReaperSprite.html">
+                        <img src="Images/gr-mockup.png" style="width: 100%" alt="image">
+                    </a>
+
+                </div>
+
+                <div class="grid-area-11">
+                        <a href="http://charlottejarlholm.com/kea/lenny-the-reaper/grimReaperSprite.html" target="_blank">
+                            <button class="learn-more">
+                                <div class="circle">
+                                    <span class="icon arrow"></span>
+                                </div>
+                                <p class="button-text">Watch Here</p>
+                            </button>
+                        </a>
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

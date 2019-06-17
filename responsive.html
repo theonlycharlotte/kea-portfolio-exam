@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Responsive website</title>
+
+    <style>
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: freight-sans-pro, sans-serif;
+        }
+
+        button {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        button.learn-more {
+            width: 12rem;
+            height: auto;
+        }
+
+        button.learn-more .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: #a316af;
+            border-radius: 1.625rem;
+        }
+
+        button.learn-more .circle .icon {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #fff;
+        }
+
+        button.learn-more .circle .icon.arrow {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+        }
+
+        button.learn-more .circle .icon.arrow::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+        }
+
+        button.learn-more .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: #a316af;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        button:hover .circle {
+            width: 100%;
+        }
+
+        button:hover .circle .icon.arrow {
+            background: #fff;
+            transform: translate(1rem, 0);
+        }
+
+        button:hover .button-text {
+            color: #fff;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+<body class="body-white">
+
+    <header class="sticky">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img class="my-logo" src="Images/c-logo.svg" alt=logo></a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="current" href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <div class="section-divider">
+            <div>
+                <h2>
+                    HANDCODING A RESPONSIVE WEBSITE
+                </h2>
+
+                <h4>
+                    This project was my first attempt at prototyping, coding and testing a responsive website for various viewports and devices. The tools were Adobe XD, CSS media queries and breakpoints in combination with CSS grid layouts.
+
+                </h4>
+                <br> <br>
+                <em> This exercise introduced me to the design and implementation of multi-device layout patterns for responsive webdesign. I now feel quite confident coding responsive grid layouts with CSS media queries. </em>
+
+                <img src="Images/memphis-devices.png" style="width: 100%" alt="image">
+
+            </div>
+        </div>
+
+        <div class="grid">
+
+            <div class="grid-area-1">
+
+                <h4>
+                    The task was to design a website about an art style, but also to incorporate the art style into the design of the website itself. I was given the art style 'post-modernism', however, this style is incredibly broad. I therefore narrowed it down to the Memphis Movement founded in Milan in the 1980s. My first step was to research the Memphis style and then develop a moodboard to serve as a guideline and inspiration. I defined rational and emotional keywords, as well colors, typography and textures. I made sure to keep the moodboard visible throughout the whole process.
+
+                </h4>
+
+            </div>
+
+            <div class="grid-area-2">
+
+                <img src="Images/moodboard-memphis.png" style="width: 100%" alt="image">
+
+            </div>
+
+            <div class="grid-area-3">
+
+                <img src="Images/graphics.png" style="width: 90%" alt="image">
+
+
+
+            </div>
+
+            <div class="grid-area-4">
+
+                <h4>
+                    Part of the exercise was also learning about Design Principles such a Gestalt principles and different types of contrasts.
+                    Inspired by the Memphis art movement, I incorporated texture contrasts, orientation contrasts and color contrasts into the design of the site, which can be seen in the graphics of the background image which I designed in Illustrator. I also applied Gestalt principles such as figure-ground (the CSS grid areas are placed on a fixed background adding dimension), closure, proximity and symmetry.
+
+                </h4>
+
+
+
+            </div>
+
+            <div class="grid-area-5">
+
+                <h4> The next step was to design a multidevice layout pattern which would work on desktops, tablets and phones. I went for the "mostly fluid" layout type:</h4>
+                <em>"A multi-column
+                    layout that introduces
+                    larger margins on big
+                    screens, relies on fluid
+                    grids and images to scale
+                    from large screens down to
+                    small screen sizes, and
+                    stacks columns vertically in
+                    its narrowest incarnations”</em>
+
+                <h4>
+                    I then went on to sketch wireframes on paper for each device type.
+                </h4>
+
+
+
+
+            </div>
+
+            <div class="grid-area-6">
+                <img src="Images/multidevice-layout.svg" style="width: 85%" alt="image">
+
+            </div>
+
+            <div class="grid-area-7">
+                <img src="Images/styletile-memphis.png" style="width: 90%" alt="image">
+
+
+            </div>
+
+
+            <div class="grid-area-8">
+
+                <div>
+                    <h4>
+                        After sketching basic wireframes on paper, it was time to create my first high fidelity prototype in Adobe XD. To ensure coherent visual identity on all the pages, I developed a style tile defining the typography, color scheme, and button layout.
+                        <br> <br>Below is the link to the first iteration of the desktop version.
+                    </h4>
+                </div>
+
+                <a href="https://xd.adobe.com/view/5d331b6d-2dda-44ea-790e-1ebe45507cda-2b02/?fullscreen" target="_blank">
+                    <button class="learn-more">
+                        <div class="circle">
+                            <span class="icon arrow"></span>
+                        </div>
+                        <p class="button-text">XD prototype</p>
+                    </button>
+                </a>
+
+
+            </div>
+
+            <div class="grid-area-9">
+
+            </div>
+
+            <div class="grid-area-10">
+
+
+                <h4>After building the high fidelity prototype, it was time to user-test it. <br>I chose to conduct a Five Second test of the landing page shared on <a href="https://usabilityhub.com/" target="_blank">UsabilityHub</a> and I also carried out face-to-face interviews. <br> I wanted to measure the first impression given by the landing page, as users will bounce off a site in a matter of seconds if you fail to grab their attention fast. I wanted to test what participants thought the page was about, after viewing it for just five seconds.
+                    <br>
+                    The test consisted of three questions with test group size of 10, of which 7 participated.
+
+                    The questions were the following: <br> <br>
+
+                        - What do you think the website was about? <br>
+                        - What was the purpose of the website?<br>
+                        - What was the most prominent element on the page?<br>
+                     <br>
+                    Test findings: My test results showed that it was not clear to the users that the page was about an art style. Some thought it was a commercial website selling high-end design furniture or a page about interior design. My planned changes were therefore to reiterate the design and change the background image.
+
+                </h4>
+
+            </div>
+
+            <div class="grid-area-11">
+
+                <img src="Images/five-second-test.png" style="width: 100%" alt="image">
+
+            </div>
+
+            <div class="grid-area-12">
+                <a href="http://charlottejarlholm.com/kea/responsive/index.html">
+                    <img src="Images/memphis-macbook.png" style="width: 100%" alt="image">
+                </a>
+            </div>
+
+            <div class="grid-area-13">
+                <div>
+                    <h4> The final step was to code the responsive site using CSS grids and nested grids. I defined my CSS breakpoints as 630px and 1000px which can be seen on the final version here:
+                    </h4>
+                </div>
+
+<!--                <a href="http://charlottejarlholm.com/kea/responsive/index.html" target="_blank">-->
+                    <button class="learn-more">
+                        <div class="circle">
+                            <span class="icon arrow"></span>
+                        </div>
+                        <p class="button-text"> Responsive Site</p>
+                    </button>
+<!--                </a>-->
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
